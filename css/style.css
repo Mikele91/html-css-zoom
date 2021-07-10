@@ -13,7 +13,7 @@ body
 /* header  */
 header{
     height: 40px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     justify-content: space-between;
 }
@@ -78,17 +78,24 @@ header{
 /* main */
  main{
      display: flex;
-     height: calc(100vh - 40px);
-     background-color: yellow;
+     height: calc(100vh - 110px);
+     /* background-color: yellow; */
  }
 
  .col, .col-2{
      width: 10%;
-     border: 3px solid blue;
+     /* border: 3px solid blue; */
      display: flex;
  }
  .col-2{
     width: 80%;
+   
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: flex-start; */
+    justify-content: space-between;
+    align-content: space-between;
+   
     
 }
 .arrow-left, .arrow-right{
@@ -112,4 +119,90 @@ header{
     color: white;
     font-size: 16px;
     padding-bottom: 5px;
+}
+
+.card-hero{
+    width: calc((100% - 20px) / 5);
+    height: calc((100% - 20px) / 5);
+  
+    
+    
+}
+.img-card{
+    width: 100%;
+    height: 100%;
+     object-fit: cover; 
+     border-radius: 8px;
+
+      
+}
+
+
+/* footer */
+
+footer{
+    background-color:#222426 ;
+    height: 70px;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+}
+footer i{
+    font-size: 20px;
+}
+
+.mute-video{
+     width:20% ; 
+     height: 100%;
+}
+
+.footer-left-nav, .footer-center-nav{
+    height: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-left-nav li, .footer-center-nav li{
+    text-align: center;
+     padding-right: 30px;
+     color:#aaabac; 
+
+}
+#condividi-schermo{
+    color: #23d959;
+}
+.fa-pause{
+    margin-right: 5px;
+}
+
+.arrow-position{
+    position: relative;
+}
+
+.fa-chevron-up, .num-partecipanti{
+    position: absolute;
+    top:0;
+    right: 25px;
+    font-size:10px ;
+}
+.num-partecipanti{
+    top: 0;
+    right:40px;
+    font-size: 12px;
+}
+.btm {
+    display: flex;
+    align-items: center;
+}
+button{
+    border-radius: 10px;
+    background-color: red;
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    
+    
 }
